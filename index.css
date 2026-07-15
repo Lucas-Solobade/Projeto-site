@@ -141,13 +141,12 @@ section p {
 /* ==================== EFEITOS DO MOUSE ==================== */
 
 body {
-    cursor: url('Imagens/Calcinha3.webp'), auto;
+    cursor: url('Imagens/CursorCalcinha.jpg'), auto;
 }
 
 a, button {
-    cursor: url('Imagens/Calcinha3.webp'), pointer;
+    cursor: url('Imagens/CursorCalcinha.jpg'), pointer;
 }
-
 #luz-mouse {
     position: fixed;
     width: 60px;
