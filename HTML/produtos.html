@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Johnny Calcinha</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Ajuste do container para dar mais espaço na página de produtos */
+        .container {
+            max-width: 1200px !important; /* Deixa o site mais largo para caber os produtos lado a lado */
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Força a tag main a usar 100% da largura útil */
+        main {
+            display: block !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* O segredo do alinhamento: Grid de 3 colunas perfeitas */
+        .grid-produtos {
+            display: grid !important;
+            /* Cria 3 colunas de tamanhos iguais se houver espaço, senão ajusta sozinho */
+            grid-template-columns: repeat(3, 1fr) !important; 
+            gap: 25px !important;
+            padding: 30px 0 !important;
+            width: 100% !important;
+        }
+
+        /* Organização individual de cada caixinha de produto */
+        .card-produto {
+            background: #fff !important;
+            border: 3px solid #b3001e !important;
+            border-radius: 15px !important;
+            padding: 20px !important;
+            text-align: center !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            box-sizing: border-box !important;
+        }
+
+        .card-produto img {
+            width: 100% !important;
+            height: 180px !important;
+            object-fit: contain !important;
+            border-radius: 8px !important;
+            margin-bottom: 15px !important;
+        }
+
+        .card-produto h3 {
+            color: #b3001e !important;
+            margin: 10px 0 !important;
+            font-size: 1.3em !important;
+        }
+
+        .card-produto p {
+            font-size: 0.9em !important;
+            color: #444 !important;
+            line-height: 1.4 !important;
+            margin-bottom: 15px !important;
+            flex-grow: 1 !important;
+        }
+
+        .preco {
+            font-weight: bold !important;
+            font-size: 1.25em !important;
+            color: #2e7d32 !important;
+            margin-top: auto !important;
+            background: #e8f5e9 !important;
+            padding: 5px 10px !important;
+            border-radius: 5px !important;
+            display: inline-block !important;
+        }
+
+        /* Responsividade: Se abrir no celular, eles ficam um embaixo do outro para não quebrar */
+        @media (max-width: 900px) {
+            .grid-produtos {
+                grid-template-columns: repeat(2, 1fr) !important; /* 2 por linha em telas médias */
+            }
+        }
+        @media (max-width: 600px) {
+            .grid-produtos {
+                grid-template-columns: 1fr !important; /* 1 por linha no celular */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre-mim.html">Sobre mim</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            </ul>
+        </nav>
+    
+        <header> 
+            <h1>Produtos do Johnny</h1>
+            <h2>As melhores calcinhas vermelhas do mercado asiático-tupiniquim</h2>
+            
+            <main>
+                <div class="grid-produtos">
+                    
+                    <!-- Calcinha 1 (WEBP) -->
+                    <div class="card-produto">
+                        <img src="Imagens/Calcinha1.webp" alt="Calcinha Diamante de Sangue">
+                        <h3>Diamante de Sangue</h3>
+                        <p>Modelo com detalhes nas laterais que brilham mais que o futuro do Johnny. Perfeita para quem quer seduzir sem perder o glamour de uma pedra preciosa de origem duvidosa.</p>
+                        <span class="preco">¥ 350</span>
+                    </div>
+
+                    <!-- Calcinha 2 (WEBP) -->
+                    <div class="card-produto">
+                        <img src="Imagens/Calcinha2.webp" alt="Calcinha Corrente do Amor">
+                        <h3>Corrente do Amor</h3>
+                        <p>Um modelo ousado com detalhes em metal dourado para prender a atenção de qualquer um. Se o amor é uma prisão, essa calcinha é a algema.</p>
+                        <span class="preco">¥ 450</span>
+                    </div>
+
+                    <!-- Calcinha 3 (WEBP) -->
+                    <div class="card-produto">
+                        <img src="Imagens/Calcinha3.webp" alt="Kit Diaba Confessional">
+                        <h3>Kit Diaba Confessional</h3>
+                        <p>Um combo com mensagens picantes escritas estrategicamente. Ideal para quem quer mandar um recado direto sem precisar dizer uma única palavra.</p>
+                        <span class="preco">¥ 600</span>
+                    </div>
+
+                    <!-- Calcinha 4 (WEBP) -->
+                    <div class="card-produto">
+                        <img src="Imagens/Calcinha4.webp" alt="Renda-se ao Johnny">
+                        <h3>Renda-se ao Johnny</h3>
+                        <p>Modelagem clássica em renda pura de alta qualidade. Tão confortável que parece que você está sendo abraçada por uma nuvem vermelha de puro estilo.</p>
+                        <span class="preco">¥ 300</span>
+                    </div>
+
+                    <!-- Calcinha 5 (JPG) -->
+                    <div class="card-produto">
+                        <img src="Imagens/Calcinha5.jpg" alt="Asa Delta de Emergência">
+                        <h3>Asa Delta de Emergência</h3>
+                        <p>Fio dental básico, minimalista e aerodinâmico. Ideal para dias quentes e para quem busca o máximo de liberdade com o mínimo de pano.</p>
+                        <span class="preco">¥ 250</span>
+                    </div>
+
+                    <!-- Calcinha 6 (WEBP - A RELÍQUIA) -->
+                    <div class="card-produto" style="border: 4px solid #ffd700 !important; box-shadow: 0 0 20px rgba(255, 215, 0, 0.6) !important;">
+                        <img src="Imagens/Calcinha6.webp" alt="A Relíquia do Fundamental">
+                        <h3 style="color: #d4af37 !important;">👑 A Relíquia de Rayan</h3>
+                        <p><strong>PEÇA ÚNICA E HISTÓRICA!</strong> Esta calcinha carrega a própria essência do empreendedorismo. Usada pessoalmente pelo Johnny durante o ensino fundamental para vencer uma aposta escolar histórica. Foi um presente de valor inestimável dado pelo seu melhor amigo de infância, Rayan. Apresenta marcas autênticas de história e nostalgia. Não lave, contém o DNA da vitória.</p>
+                        <span class="preco" style="font-size: 1.4em !important; color: #d32f2f !important; background: #ffebee !important;">¥ 1.500.000</span>
+                    </div>
+
+                </div>
+            </main>
+        </header>
+    </div>
+</body>
+</html>

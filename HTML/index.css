@@ -1,0 +1,140 @@
+/* Reset básico para limpar margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5f6; /* Um fundo bem suave com um toque sutil de rosa/vermelho */
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+/* Container principal para centralizar e limitar a largura do site */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- NAVEGAÇÃO --- */
+nav {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff3b5c; /* Destaque em vermelho vivo ao passar o mouse */
+}
+
+/* --- CABEÇALHO E APRESENTAÇÃO --- */
+header {
+    text-align: center;
+}
+
+/* Estilização da foto do Johnny Calcinha */
+.center img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 50%; /* Deixa a imagem redondinha */
+    border: 5px solid #d31c3c; /* Borda vermelha charmosa */
+    box-shadow: 0 8px 16px rgba(211, 28, 60, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.center img:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #d31c3c; /* Vermelho assinatura */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide as duas seções em duas colunas no desktop */
+    gap: 30px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 4px solid #d31c3c; /* Detalhe em vermelho no topo do card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: translateY 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Dá uma leve levantada ao passar o mouse */
+}
+
+section h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555555;
+    text-align: justify;
+}
+
+/* --- RESPONSIVIDADE (Para Celulares) --- */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* No celular, as seções ficam uma embaixo da outra */
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
