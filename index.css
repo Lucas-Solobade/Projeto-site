@@ -138,3 +138,35 @@ section p {
         gap: 15px;
     }
 }
+/* ==================== EFEITOS DO MOUSE ==================== */
+
+body {
+    cursor: url('Imagens/Calcinha3.webp'), auto;
+}
+
+a, button {
+    cursor: url('Imagens/Calcinha3.webp'), pointer;
+}
+
+#luz-mouse {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    animation: piscarVermelho 1s infinite alternate;
+}
+
+@keyframes piscarVermelho {
+    0% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
