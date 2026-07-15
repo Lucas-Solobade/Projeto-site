@@ -6,11 +6,14 @@
 }
 
 body {
+   
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff5f6; /* Um fundo bem suave com um toque sutil de rosa/vermelho */
+    background-color: #fff5f6; 
     color: #2c2c2c;
     line-height: 1.6;
+    cursor: url('Imagens/CursorCalcinha.jpg'), auto !important; /* Adicionado aqui com !important */
 }
+
 
 /* Container principal para centralizar e limitar a largura do site */
 .container {
@@ -145,10 +148,13 @@ body {
 }
 
 a, button {
-    cursor: url('Imagens/CursorCalcinha.jpg'), pointer;
+    cursor: url('Imagens/CursorCalcinha.jpg'), pointer !important;
 }
+
 #luz-mouse {
     position: fixed;
+    top: 0;             /* Adicionado */
+    left: 0;            /* Adicionado */
     width: 60px;
     height: 60px;
     background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0) 70%);
