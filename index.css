@@ -1,19 +1,17 @@
-/* Reset básico para limpar margens e paddings padrão */
-* {
+//* Reset básico para limpar margens e paddings padrão */
+*, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url('Imagens/CursorCalcinha.png'), auto !important; /* Força o cursor em tudo desde a raiz */
 }
 
 body {
-   
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff5f6; 
     color: #2c2c2c;
     line-height: 1.6;
-    cursor: url('Imagens/Imagens/CursorCalcinha.png'), auto !important;
 }
-
 
 /* Container principal para centralizar e limitar a largura do site */
 .container {
@@ -141,17 +139,16 @@ section p {
         gap: 15px;
     }
 }
-body {
-    cursor: url('Imagens/CursorCalcinha.png'), auto !important; /* Deixei apenas uma pasta */
-}
 
+/* --- LINKS E BOTÕES --- */
 a, button {
-    cursor: url('Imagens/CursorCalcinha.png'), pointer !important; /* Deixei apenas uma pasta */
+    cursor: url('Imagens/CursorCalcinha.png'), pointer !important; 
 }
 
+/* --- EFEITO DE LUZ --- */
 #luz-mouse {
     position: fixed;
-    top: 0;             
+    top: 0;              
     left: 0;            
     width: 60px;
     height: 60px;
