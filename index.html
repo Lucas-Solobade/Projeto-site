@@ -45,22 +45,20 @@
 
     <!-- O Script fica aqui, ANTES de fechar o body -->
     <script>
-        console.log("1. O script carregou com sucesso!");
-        
         const luz = document.getElementById('luz-mouse');
+
         if (!luz) {
             console.error("ERRO: A div 'luz-mouse' não foi encontrada no HTML!");
-        } else {
-            console.log("2. A div 'luz-mouse' foi encontrada!");
         }
 
         document.addEventListener('mousemove', (e) => {
-            // Se o mouse mexer, esse log vai atualizar na tela
-            console.log("Mouse mexendo em:", e.clientX, e.clientY);
+            // Pegamos a posição do mouse na janela + o quanto a página rolou
+            const posX = e.clientX + window.pageXOffset;
+            const posY = e.clientY + window.pageYOffset;
             
-            luz.style.left = e.clientX + 'px';
-            luz.style.top = e.clientY + 'px';
+            luz.style.left = posX + 'px';
+            luz.style.top = posY + 'px';
         });
-</script>
+    </script>
 </body>
 </html>

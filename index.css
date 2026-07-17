@@ -147,17 +147,19 @@ a, button {
 
 /* --- EFEITO DE LUZ --- */
 #luz-mouse {
-    position: fixed;
-    top: 0;              
-    left: 0;            
+    position: absolute; /* Mudamos de fixed para absolute! */
     width: 60px;
     height: 60px;
     background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0) 70%);
     border-radius: 50%;
-    pointer-events: none;
+    pointer-events: none; /* Garante que você consiga clicar nos links "atrás" da luz */
     z-index: 9999;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Centraliza a div no cursor */
     animation: piscarVermelho 1s infinite alternate;
+    
+    /* Importante: Começar escondido para não dar o bug de travar no início */
+    left: -100px; 
+    top: -100px;
 }
 
 @keyframes piscarVermelho {
