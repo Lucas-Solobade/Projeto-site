@@ -11,7 +11,7 @@ body {
     background-color: #fff5f6; 
     color: #2c2c2c;
     line-height: 1.6;
-    cursor: url('Imagens/CursorCalcinha.jpg'), auto !important; /* Adicionado aqui com !important */
+    cursor: url('Imagens/CursorCalcinha.png'), auto !important; /* Adicionado aqui com !important */
 }
 
 
@@ -144,11 +144,11 @@ section p {
 /* ==================== EFEITOS DO MOUSE ==================== */
 
 body {
-    cursor: url('Imagens/CursorCalcinha.jpg'), auto;
+    cursor: url('Imagens/CursorCalcinha.png'), auto;
 }
 
 a, button {
-    cursor: url('Imagens/CursorCalcinha.jpg'), pointer !important;
+    cursor: url('Imagens/CursorCalcinha.png'), pointer !important;
 }
 
 #luz-mouse {
