@@ -141,20 +141,18 @@ section p {
         gap: 15px;
     }
 }
-/* ==================== EFEITOS DO MOUSE ==================== */
-
 body {
-    cursor: url('Imagens/Imagens/CursorCalcinha.png'), auto;
+    cursor: url('Imagens/CursorCalcinha.png'), auto !important; /* Deixei apenas uma pasta */
 }
 
 a, button {
-    cursor: url('Imagens/Imagens/CursorCalcinha.png'), pointer !important;
+    cursor: url('Imagens/CursorCalcinha.png'), pointer !important; /* Deixei apenas uma pasta */
 }
 
 #luz-mouse {
     position: fixed;
-    top: 0;             /* Adicionado */
-    left: 0;            /* Adicionado */
+    top: 0;             
+    left: 0;            
     width: 60px;
     height: 60px;
     background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 0%, rgba(255, 0, 0, 0) 70%);
