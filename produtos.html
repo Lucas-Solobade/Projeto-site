@@ -90,7 +90,8 @@
         }
     </style>
 </head>
-<body>
+<body style="cursor: url('./Imagens/CursorCalcinha.png'), auto !important;">
+    <div id="luz-mouse"></div>
     <div class="container">
         <nav>
             <ul>
@@ -160,21 +161,6 @@
             </main>
         </header>
     </div>
-    <script>
-        const luz = document.getElementById('luz-mouse');
-
-        if (!luz) {
-            console.error("ERRO: A div 'luz-mouse' não foi encontrada no HTML!");
-        }
-
-        document.addEventListener('mousemove', (e) => {
-            // Pegamos a posição do mouse na janela + o quanto a página rolou
-            const posX = e.clientX + window.pageXOffset;
-            const posY = e.clientY + window.pageYOffset;
-            
-            luz.style.left = posX + 'px';
-            luz.style.top = posY + 'px';
-        });
-    </script>
+   <script src="index.js"></script>
 </body>
 </html>
