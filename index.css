@@ -11,7 +11,7 @@ body {
     background-color: #fff5f6; 
     color: #2c2c2c;
     line-height: 1.6;
-    cursor: url('./Imagens/CursorCalcinha.png'), auto !important; /* Adicionado aqui com !important */
+    cursor: url('/Johnny-Calcinha/Imagens/CursorCalcinha.png'), auto !important;
 }
 
 
