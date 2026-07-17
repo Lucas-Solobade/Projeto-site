@@ -43,22 +43,8 @@
     </div>
     <!-- ... todo o resto do seu site (main, footer, etc.) ... -->
 
-    <!-- O Script fica aqui, ANTES de fechar o body -->
-    <script>
-        const luz = document.getElementById('luz-mouse');
+    <!-- Chamando o arquivo JS externo -->
+    <script src="index.js"></script>
 
-        if (!luz) {
-            console.error("ERRO: A div 'luz-mouse' não foi encontrada no HTML!");
-        }
-
-        document.addEventListener('mousemove', (e) => {
-            // Pegamos a posição do mouse na janela + o quanto a página rolou
-            const posX = e.clientX + window.pageXOffset;
-            const posY = e.clientY + window.pageYOffset;
-            
-            luz.style.left = posX + 'px';
-            luz.style.top = posY + 'px';
-        });
-    </script>
 </body>
 </html>
